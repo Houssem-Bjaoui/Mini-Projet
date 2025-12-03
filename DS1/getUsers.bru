@@ -1,0 +1,20 @@
+meta {
+  name: getUsers
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:5000/users/allUsers
+  body: none
+  auth: inherit
+}
+
+params:query {
+  : 
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
