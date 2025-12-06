@@ -1,0 +1,168 @@
+Index: .idea/material_theme_project_new.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/material_theme_project_new.xml b/.idea/material_theme_project_new.xml
+new file mode 100644
+--- /dev/null	(date 1765027863030)
++++ b/.idea/material_theme_project_new.xml	(date 1765027863030)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="MaterialThemeProjectNewConfig">
++    <option name="metadata">
++      <MTProjectMetadataState>
++        <option name="migrated" value="true" />
++        <option name="pristineConfig" value="false" />
++        <option name="userId" value="-7375ae19:1958a519851:-7ffe" />
++      </MTProjectMetadataState>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1765027862990)
++++ b/.idea/misc.xml	(date 1765027862990)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" default="true">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1765027862961)
++++ b/.idea/workspace.xml	(date 1765027862961)
+@@ -0,0 +1,117 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
++  <component name="ChangeListManager">
++    <list default="true" id="598b77d6-42a1-4b91-8c83-f18036d8eaaa" name="Changes" comment="recherche et tri pour les projet done" />
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="ComposerSettings">
++    <execution />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="JavaScript File" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="gaston" />
++      </map>
++    </option>
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;ghassen004&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/Houssem-Bjaoui/Mini-Projet&quot;,
++    &quot;accountId&quot;: &quot;71c2632e-f4ab-4012-89c3-99744c99d3c4&quot;
++  }
++}</component>
++  <component name="ProblemsViewState">
++    <option name="selectedTabId" value="CurrentFile" />
++  </component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 8
++}</component>
++  <component name="ProjectId" id="36FiQCbhEoICk8bqMWD7ysDgCcK" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Node.js.ProjectRoute.js.executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.git.unshallow": "true",
++    "kotlin-language-version-configured": "true",
++    "last_opened_file_path": "C:/Users/ghassen/Mini-Projet",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "ts.external.directory.path": "C:\\Users\\ghassen\\AppData\\Local\\JetBrains\\IntelliJ IDEA 2024.3.2.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
++    "vue.rearranger.settings.migration": "true"
++  }
++}]]></component>
++  <component name="SharedIndexes">
++    <attachedChunks>
++      <set>
++        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
++        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
++      </set>
++    </attachedChunks>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="598b77d6-42a1-4b91-8c83-f18036d8eaaa" name="Changes" comment="" />
++      <created>1764608702347</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1764608702347</updated>
++      <workItem from="1764608704199" duration="6382000" />
++      <workItem from="1764964299702" duration="14635000" />
++      <workItem from="1765013211168" duration="5450000" />
++      <workItem from="1765025499984" duration="2334000" />
++    </task>
++    <task id="LOCAL‎-00001" summary="recherche et tri pour les projet done">
++      <option name="closed" value="true" />
++      <created>1765027216912</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL‎-00001" />
++      <option name="project" value="LOCAL‎" />
++      <updated>1765027216914</updated>
++    </task>
++    <task id="LOCAL‎-00002" summary="recherche et tri pour les projet done">
++      <option name="closed" value="true" />
++      <created>1765027646569</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL‎-00002" />
++      <option name="project" value="LOCAL‎" />
++      <updated>1765027646569</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
++    <servers />
++  </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="recherche et tri pour les projet done" />
++    <option name="LAST_COMMIT_MESSAGE" value="recherche et tri pour les projet done" />
++  </component>
++</project>
+\ No newline at end of file

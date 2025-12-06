@@ -187,8 +187,29 @@ const deleteTask = async (req, res) => {
 // Get all tasks
 const getAllTasks = async (req, res) => {
     try{
+
+        let filter = {};
+        if (req.query.search) {
+            filter.title = { $regex: req.query.search, $options: 'i' };
+            //$regex chtlwjelna fi champs nom l kelma eli lawejna 3liha
+            // $options tkhalih me yfar9ch bin el Maj wl Min w yjib les rt ezzouz
+
+        }
+
+        //lhnee bch na3mlou tri
+        let sortOption = {};
+
+        if (req.query.sort) {
+            sortOption[req.query.sort] = 1; //tri par default ykoun croissant
+            if (req.query.sort.startsWith("-")) {
+                sortOption[req.query.sort.substring(1)] = -1; // ama ken nzidou "-"9bl l critére elli nlwjou 3lih l tri chywalli desc
+            }
+        }
+
+
         // njibou les tasks lkol
-        const tasks = await Task.find();
+        const tasks = await Task.find(filter).sort(sortOption);
+        ;
         // nraj3ouhom
         return res.status(200).json(tasks);
     }catch(error){
