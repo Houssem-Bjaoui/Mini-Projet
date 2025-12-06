@@ -1,0 +1,28 @@
+meta {
+  name: addproject
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:5000/api/projects/
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MmM4MGVlMTFhNGQxMjFhYmNmMGUwNSIsInJvbGUiOiJ1c2VyIiwibm9tIjoiaG91c3NlbSIsImxvZ2luIjoiaG91c3NlbTEyIiwiaWF0IjoxNzY0OTcyNjMwLCJleHAiOjE3NjQ5NzYyMzB9.R2ufJOFzujqNmwzaVnPfH3pHibvm-lrbazuPm3pLtbU
+}
+
+body:json {
+  {
+    "nom": "ds1",
+    "description": "projet REST permettant à des utilisateurs authentifiés de gérer leurs projets et les tâches associées."
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

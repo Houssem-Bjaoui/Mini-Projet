@@ -1,0 +1,20 @@
+meta {
+  name: deleteproject
+  type: http
+  seq: 6
+}
+
+delete {
+  url: http://localhost:5000/projects/delete/6933586ee950f6dacc96c896
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzM1NGY4NGUzYjg2ZTdhYmM5YjZlNyIsInJvbGUiOiJtYW5hZ2VyIiwibm9tIjoiamFsZWwiLCJsb2dpbiI6ImphbGVsIiwiaWF0IjoxNzY0OTc0NzExLCJleHAiOjE3NjQ5NzgzMTF9.J70gM_-3TcdTI-wfbpFYWORpDptiyuT-w0PASxQpgic
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

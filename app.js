@@ -13,6 +13,9 @@ app.use('/users', userRoutes);
 const authRoutes = require('./routes/authRoute.js');
 app.use('/auth', authRoutes);
 
+const projectRoute = require('./routes/projectRoute');
+app.use('/projects', projectRoute);
+
 
 // test
 app.get("/", (req, res) => {
@@ -34,7 +37,7 @@ const connectDB = async () => {
     console.log(" MongoDB connecté");
   } catch (err) {
     console.error(" Erreur MongoDB :", err);
-    process.exit(1); 
+    process.exit(1);
   }
 };
 
