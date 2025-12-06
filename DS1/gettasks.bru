@@ -1,0 +1,20 @@
+meta {
+  name: gettasks
+  type: http
+  seq: 13
+}
+
+get {
+  url: http://localhost:5000/tasks
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MmM4MGVlMTFhNGQxMjFhYmNmMGUwNSIsInJvbGUiOiJ1c2VyIiwibm9tIjoiaG91c3NlbSIsImxvZ2luIjoiaG91c3NlbTEyIiwiaWF0IjoxNzY1MDE1NDI3LCJleHAiOjE3NjUwMTkwMjd9.iuzyMccqTHTAEw4QhTpSSVqmXwXhqetSDEt9JLowdgQ
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

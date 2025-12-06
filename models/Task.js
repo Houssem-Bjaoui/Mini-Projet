@@ -23,7 +23,7 @@ const taskSchema = new mongoose.Schema({
   deadline : Date,
 
   projet:{
-    type: mongoose.Schema.Types.objectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: 'Projet' // reference l'objet projet
   },
 
@@ -31,7 +31,7 @@ const taskSchema = new mongoose.Schema({
   // user li bch ye5dem task
   // kn manager ynajem ya3ti tesk l user mo3ayen
     userAssigned:{
-    type: mongoose.Schema.Types.objectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: 'User' // reference l'objet user 
   }
 }, { timestamps: true }); // timestamps pour creation w modification automatique

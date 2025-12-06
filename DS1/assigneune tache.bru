@@ -1,0 +1,27 @@
+meta {
+  name: assigneune tache
+  type: http
+  seq: 17
+}
+
+post {
+  url: http://localhost:5000/tasks/addtasktoproject/69335865e950f6dacc96c894
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Configurer la base de données",
+    "description": "Installer et configurer MongoDB pour le projet",
+    "status": "todo",
+    "deadline": "2025-12-15"
+    
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
