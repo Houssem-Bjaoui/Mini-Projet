@@ -3,7 +3,7 @@ const Project = require('../models/Project');
 // bch nasn3ou projet jdid
 const addProject = async (req, res) => {
     try {
-        const { nom, description, statut } = req.body;
+        const { nom, description } = req.body;
 
 // manipulation mt3 l message d'error eli yokhrj ki ynsa l user ma yhtch esm ll projet
         if (!nom) {
@@ -31,7 +31,6 @@ const addProject = async (req, res) => {
         });
     } catch (error) {
 //w hdhi réponse en cas d'error
-
         console.error("Erreur création projet:", error);
         res.status(500).json({ msg: "Erreur serveur" });
     }
