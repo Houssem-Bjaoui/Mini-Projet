@@ -17,6 +17,10 @@ const projectRoute = require('./routes/projectRoute');
 app.use('/projects', projectRoute);
 
 
+const taskRouter = require('./routes/taskRouter');
+app.use('/tasks', taskRouter);
+
+
 // test
 app.get("/", (req, res) => {
   res.send("jawk behi");

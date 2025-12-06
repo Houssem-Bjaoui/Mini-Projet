@@ -1,0 +1,28 @@
+meta {
+  name: updatetask
+  type: http
+  seq: 14
+}
+
+put {
+  url: http://localhost:5000/tasks/update/69340670a94c2d66d1ac1a8a
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzM1NGY4NGUzYjg2ZTdhYmM5YjZlNyIsInJvbGUiOiJtYW5hZ2VyIiwibm9tIjoiamFsZWwiLCJsb2dpbiI6ImphbGVsIiwiaWF0IjoxNzY1MDE0Njk0LCJleHAiOjE3NjUwMTgyOTR9.LHNWEQIA69BVKMhzaDMWNkQVhfUIpS7JW2cgF_3jLNQ
+}
+
+body:json {
+  {
+    
+    "statut": "doing"
+    
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

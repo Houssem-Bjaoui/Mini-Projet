@@ -8,17 +8,26 @@ const {
     getTaskById, 
     updateTask, 
     deleteTask, 
-    getAllTasks 
+    getAllTasks ,
+    createTaskForProject,
+    getAllTasksByProject
+
 } = require("../controllers/taskController");
 // importer les middlewares
 const authMiddleware = require("../middlewares/authMiddleware");
-const validateStatus = require("../middlewares/validateStatusMiddleware");
+const validateStatus = require("../middlewares/validationMiddleware");
 
 // kol route test7a9 authentication ==> token
 router.use(authMiddleware);
 
 // POST : nzidou task jdida
 router.post("/addtask", validateStatus, createTask);
+
+// POST : nzidou task jdida l projet mo3ayen
+router.post("/addtasktoproject/:projectId", validateStatus, createTaskForProject);
+
+// GET : nraja3 les tasks mta3 projet mo3ayen
+router.get("/:projectId", getAllTasksByProject);
 
 // GET : nraja3 les tasks lkol
 router.get("/", getAllTasks);
