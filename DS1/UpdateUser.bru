@@ -1,0 +1,26 @@
+meta {
+  name: UpdateUser
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:5000/users/update/692dd9c055a0d35b79994c83
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nom": "houssem",
+    "login": "houssem07",
+    "password": "123456",
+    "role": "manager"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

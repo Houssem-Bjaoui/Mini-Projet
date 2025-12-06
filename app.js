@@ -17,6 +17,10 @@ const projectRoute = require('./routes/projectRoute');
 app.use('/projects', projectRoute);
 
 
+const taskRouter = require('./routes/taskRouter');
+app.use('/tasks', taskRouter);
+
+
 // test
 app.get("/", (req, res) => {
   res.send("jawk behi");
@@ -34,10 +38,13 @@ const mongoose = require('mongoose');
 const connectDB = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URL);
-    console.log(" MongoDB connecté");
+    console.log("MongoDB connecté");
   } catch (err) {
+ 
+
     console.error(" Erreur MongoDB :", err);
     process.exit(1);
+
   }
 };
 

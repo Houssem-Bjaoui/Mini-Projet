@@ -1,0 +1,31 @@
+meta {
+  name: createtask
+  type: http
+  seq: 12
+}
+
+post {
+  url: http://localhost:5000/tasks/addtask
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MzM1NGY4NGUzYjg2ZTdhYmM5YjZlNyIsInJvbGUiOiJtYW5hZ2VyIiwibm9tIjoiamFsZWwiLCJsb2dpbiI6ImphbGVsIiwiaWF0IjoxNzY1MDE0Njk0LCJleHAiOjE3NjUwMTgyOTR9.LHNWEQIA69BVKMhzaDMWNkQVhfUIpS7JW2cgF_3jLNQ
+}
+
+body:json {
+  {
+    "title": "Développer API REST",
+    "description": "DS1",
+    
+    "deadline": "2025-12-31T23:59:59.000Z",
+    "projet": "69335865e950f6dacc96c894",
+    "userAssigned": "692c80ee11a4d121abcf0e05"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
