@@ -55,7 +55,7 @@ const login = async (req, res) => {
             });
 
         }catch (error) {
-            console.error('fema mochklan f login:', error);
+            console.error('fema mochkla f login:', error);
             res.status(500).json({
                 msg: 'fema mochkla f server'
             });
