@@ -3,7 +3,7 @@ const Project = require('../models/Project');
 // bch nasn3ou projet jdid
 const addProject = async (req, res) => {
     try {
-        const { nom, description, statut } = req.body;
+        const { nom, description } = req.body;
 
 // manipulation mt3 l message d'error eli yokhrj ki ynsa l user ma yhtch esm ll projet
         if (!nom) {
@@ -31,25 +31,54 @@ const addProject = async (req, res) => {
         });
     } catch (error) {
 //w hdhi réponse en cas d'error
-
         console.error("Erreur création projet:", error);
         res.status(500).json({ msg: "Erreur serveur" });
     }
 };
 
-//getprojects traj3lna l projeyet lkl w ma3ndou l7a9 ken el user eli andou role manager yest3mlha
+//getprojects traj3lna l projeyet lkl
 const getProjects = async (req, res) => {
     try {
-        // Vérification  mt3 role
+
+// Vérification mt3 rôle
+        let filter = {};
+// kenoumanager : ychouf les projets lkl
         if (req.user.role !== "manager") {
-            return res.status(403).json({ msg: "Accès refusé : réservé aux managers" });
+// kenou user : narj3oulou ken les projets mte3ou
+            filter.proprietaire = req.user.id;
         }
 
-        // find tjiblna les projet l mawjoudin lkl
-        const projects = await Project.find();
+        if (req.query.search) {
+                // tekhou ml query search el mot elli ktebneha bch nlawjou 3liha
+            const search = req.query.search;
+
+            filter.$or = [
+                { nom: { $regex: search, $options: "i" } }
+                //$regex chtlwjelna fi champs nom l kelma eli lawejna 3liha
+                // $options tkhalih me yfar9ch bin el Maj wl Min w yjib les rt ezzouz
+
+            ];
+        }
+
+       //lhnee bch na3mlou tri
+        let sortOption = {};
+
+        if (req.query.sort) {
+            sortOption[req.query.sort] = 1; //tri par default ykoun croissant
+            if (req.query.sort.startsWith("-")) {
+                sortOption[req.query.sort.substring(1)] = -1; // ama ken nzidou "-"9bl l critére elli nlwjou 3lih l tri chywalli desc
+            }
+        }
+
+        // find tjiblna les projets l mawjoudin selon el filtre
+        const projects = await Project.find(filter).sort(sortOption);
 
         res.json({
-            msg: `Projets récupérés avec succès`, projects});
+            msg: `Projets récupérés avec succès`,
+            count: projects.length,   // nombre total (optionnel mais utile)
+            projects
+        });
+
     } catch (error) {
         console.error("Erreur récupération projets:", error);
         res.status(500).json({ msg: "Erreur serveur" });
